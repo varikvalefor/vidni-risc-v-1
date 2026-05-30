@@ -14,9 +14,9 @@ lupe:
 	mv	s0,	a0
 	beq	a0,	x0,	ciska_v4
 	li	t0,	1
-	beq	a0,	t1,	ciska_x1
+	beq	a0,	t0,	ciska_x1
 	li	t0,	2
-	beq	a0,	t2,	ciska_x2
+	beq	a0,	t0,	ciska_x2
 ciska_cunso:
 	li	t1,	traji_vidnysle
 	li	t0,	4
