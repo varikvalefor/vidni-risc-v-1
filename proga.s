@@ -2,10 +2,22 @@
 # .i pixra lo nu la .vynk. cu zgana lo cunso pe'a vidni
 
 .eqv	traji_vidnysle	131072
+.eqv    heap    0x10040000
+
+.data
+dv1:    .asciz  "dembak.bmp"
 
 .text
 top:
 init:
+        la      a0,     dv1
+        li      a1,     0
+        li      a7,     1024
+        ecall
+        li      a7,     63
+        li      a1,     heap
+        li      a2,     524288  # 512 * 256 * 4
+        ecall
 lupe:
 	li	a7,	30
 	ecall
