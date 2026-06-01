@@ -163,7 +163,7 @@ vartisyboi_cusku_row_l:	# ni'o rinka lo nu cusku pe'a lo se du'u lo pa vidnysle 
 	lb	a1,	(t5)
 	beqz	a1,	vartisyboi_cusku_row_l_selidne
 
-	li	a1,	0xffffffff
+	li	a1,	0xc0c0c0c0
 	sw	a1,	(a0)
 vartisyboi_cusku_row_l_selidne:
 	addi	t4,	t4,	1
