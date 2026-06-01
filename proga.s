@@ -121,9 +121,13 @@ vartisyboi:
 vartisyboi_incr:
 	addi	t1,	t1,	-1
 	li	t3,	202	# 217 - 15; le selsumji be zo'e pe le pa moi be lo'i vidnysle pe le vidni ge'u bei le ni ganro
+
 	blt	t1,	t3,	vartisyboi_tolcru
-	andi	t3,	s1,	1
+
+	andi	t3,	s1,	3
 	sub	t2,	t2,	t3
+	addi	t2,	t2,	1
+
 	sw	t1,	(t0)
 	sw	t2,	4(t0)
 vartisyboi_cusku:
